@@ -39,6 +39,9 @@ case class MySqlInternalDatabaseDefs(dbConfig: DatabaseConfig, driver: Driver) {
         |  }
         |  numThreads = 1
         |  connectionTimeout = 5000
+        |  registerMbeans = true
+        |  poolName = "graphdb"
+        |  conectionPool = "HikariCP"
         |  $pooled
         |}
       """.stripMargin)
