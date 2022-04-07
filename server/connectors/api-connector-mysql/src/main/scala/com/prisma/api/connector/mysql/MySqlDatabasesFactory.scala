@@ -32,8 +32,6 @@ object MySqlDatabasesFactory {
         |  queueSize = ${dbConfig.queueSizeLimitOrDefault}
         |  connectionTimeout = 5000
         |  registerMbeans = true
-        |  poolName = "graphdb"
-        |  conectionPool = "HikariCP"
         |}
       """.stripMargin)
       .resolve
